@@ -63,5 +63,7 @@ console.log(rows);
 let rowArray = [];
 
 for (i = 0; i < rows.length; i++) {
-  let cell = csvString.split(",");
+  let cell = rows[i].split(",");
+  rowArray[i] = cell;
 }
+console.log(rowArray);
